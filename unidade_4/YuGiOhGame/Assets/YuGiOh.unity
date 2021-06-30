@@ -190,6 +190,150 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &579171676
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1970282340}
+    m_Modifications:
+    - target: {fileID: 97862000789301127, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 97862000789301127, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 97862000789301127, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 97862000789301127, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 97862000789301127, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -247.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0000019073
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 309.63275
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 57.146515
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355793613402088889, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324549327577059109, guid: 764a39578c1fd0240bb9655fb347865d,
+        type: 3}
+      propertyPath: m_Name
+      value: Status
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 764a39578c1fd0240bb9655fb347865d, type: 3}
 --- !u!1 &858118063
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,6 +474,16 @@ MonoBehaviour:
     type: 3}
   baby_dragon: {fileID: 0}
   battlewasp: {fileID: 0}
+  big_eye: {fileID: 0}
+  blade_rabbit: {fileID: 0}
+  dark_bat: {fileID: 0}
+  dark_magician: {fileID: 0}
+  dark_magician_girl: {fileID: 0}
+  dark_summoning_beast: {fileID: 0}
+  evoltile_westlo: {fileID: 0}
+  fluffal_octopus: {fileID: 0}
+  isMarrom: 1
+  comprouUma: 0
   cartaComprada: {fileID: 0}
   cartasJogoMarrom:
   - {fileID: 0}
@@ -343,7 +497,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  isMarrom: 1
 --- !u!1001 &1970282339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -386,6 +539,54 @@ PrefabInstance:
       propertyPath: battlewasp
       value: 
       objectReference: {fileID: 5793391369549728736, guid: 96b8bacfa7147f549b9ed4495d06a6f2,
+        type: 3}
+    - target: {fileID: 232945837599886916, guid: 74e4e6e3c1e0ca149aecbcdbbd7bfe39,
+        type: 3}
+      propertyPath: big_eye
+      value: 
+      objectReference: {fileID: 6805781015759509851, guid: e13e761a991b16745bb5d38f36214c61,
+        type: 3}
+    - target: {fileID: 232945837599886916, guid: 74e4e6e3c1e0ca149aecbcdbbd7bfe39,
+        type: 3}
+      propertyPath: blade_rabbit
+      value: 
+      objectReference: {fileID: 8250140327064281082, guid: 93cefaaf1aa569d48b58aa53972adbab,
+        type: 3}
+    - target: {fileID: 232945837599886916, guid: 74e4e6e3c1e0ca149aecbcdbbd7bfe39,
+        type: 3}
+      propertyPath: dark_bat
+      value: 
+      objectReference: {fileID: 4251230532420442257, guid: 1b64ba492ee0cfa47b8ff48169ef5920,
+        type: 3}
+    - target: {fileID: 232945837599886916, guid: 74e4e6e3c1e0ca149aecbcdbbd7bfe39,
+        type: 3}
+      propertyPath: dark_magician
+      value: 
+      objectReference: {fileID: 6984574646145404024, guid: 59396ee7f283c154b8b693e4770c84f4,
+        type: 3}
+    - target: {fileID: 232945837599886916, guid: 74e4e6e3c1e0ca149aecbcdbbd7bfe39,
+        type: 3}
+      propertyPath: dark_magician_girl
+      value: 
+      objectReference: {fileID: 2526500607552948142, guid: 6082f8294a5955448af1ddc9fe8801a3,
+        type: 3}
+    - target: {fileID: 232945837599886916, guid: 74e4e6e3c1e0ca149aecbcdbbd7bfe39,
+        type: 3}
+      propertyPath: dark_summoning_beast
+      value: 
+      objectReference: {fileID: 88775965413146442, guid: 9a80dd3bc4ceb004794e2cb7968c0758,
+        type: 3}
+    - target: {fileID: 232945837599886916, guid: 74e4e6e3c1e0ca149aecbcdbbd7bfe39,
+        type: 3}
+      propertyPath: evoltile_westlo
+      value: 
+      objectReference: {fileID: 4905867556991191661, guid: 47cd8d6d3b8cda649b90eaed2ca4e82f,
+        type: 3}
+    - target: {fileID: 232945837599886916, guid: 74e4e6e3c1e0ca149aecbcdbbd7bfe39,
+        type: 3}
+      propertyPath: fluffal_octopus
+      value: 
+      objectReference: {fileID: 1101322148542984153, guid: 124ddcde4222e3f4d9c22b2f4255e966,
         type: 3}
     - target: {fileID: 1173830829063843871, guid: 74e4e6e3c1e0ca149aecbcdbbd7bfe39,
         type: 3}
