@@ -25,20 +25,26 @@ public class Deck : MonoBehaviour
     public GameObject assault_sentinel;
     public GameObject baby_dragon;
     public GameObject battlewasp;
+    public GameObject big_eye;
+    public GameObject blade_rabbit;
+    public GameObject dark_bat;
+    public GameObject dark_magician;
+    public GameObject dark_magician_girl;
+    public GameObject dark_summoning_beast;
+    public GameObject evoltile_westlo;
+    public GameObject fluffal_octopus;
 
-    public Stack<GameObject> cartasDeck = new Stack<GameObject>();
+    public Stack<GameObject> cartasDeck = new Stack<GameObject>(); // cartas cadastradas
 
+    private Dictionary<string, Carta> cartas = new Dictionary<string, Carta>(); // carta + dados da carta
 
-    private Dictionary<string, Carta> cartas = new Dictionary<string, Carta>();
-
-
-
-    private int vidaMarrom = 4000;
-    private int vidaVerde = 4000;
 
     // controle
     public bool isMarrom = true;
     public bool comprouUma = false;
+    private int vidaMarrom = 4000;
+    private int vidaVerde = 4000;
+    private bool fimJogo = false;
 
     // carta comprada
     public GameObject cartaComprada;
@@ -60,12 +66,28 @@ public class Deck : MonoBehaviour
         cartasDeck.Push(baby_dragon);
         cartas.Add("battlewasp", new Carta(1000, 500));
         cartasDeck.Push(battlewasp);
+        cartas.Add("big_eye", new Carta(1200, 1000));
+        cartasDeck.Push(big_eye);
+        cartas.Add("blade_rabbit", new Carta(400, 300));
+        cartasDeck.Push(blade_rabbit);
+        cartas.Add("dark_bat", new Carta(1000, 1000));
+        cartasDeck.Push(dark_bat);
+        cartas.Add("dark_magician", new Carta(2500, 2100));
+        cartasDeck.Push(dark_magician);
+        cartas.Add("dark_magician_girl", new Carta(2000, 1700));
+        cartasDeck.Push(dark_magician_girl);
+        cartas.Add("dark_summoning_beast", new Carta(0, 0));
+        cartasDeck.Push(dark_summoning_beast);
+        cartas.Add("evoltile_westlo", new Carta(700, 1900));
+        cartasDeck.Push(evoltile_westlo);
+        cartas.Add("fluffal_octopus", new Carta(800, 800));
+        cartasDeck.Push(fluffal_octopus);
 
     }
 
     public void onClickDeckMarrom()
     {
-        if (isMarrom)
+        if (isMarrom && cartasDeck.Count > 0 && !fimJogo)
         {
             cartaComprada = Instantiate(cartasDeck.Pop(), new Vector3(0, 0, 0), Quaternion.identity);
             cartaComprada.transform.SetParent(GameObject.Find("deck_marrom").transform, false);
@@ -126,7 +148,7 @@ public class Deck : MonoBehaviour
 
     public void onClickDeckVerde()
     {
-        if (!isMarrom)
+        if (!isMarrom && cartasDeck.Count > 0 && !fimJogo)
         {
             cartaComprada = Instantiate(cartasDeck.Pop(), new Vector3(0, 0, 0), Quaternion.identity);
             cartaComprada.transform.SetParent(GameObject.Find("deck_verde").transform, false);
@@ -196,6 +218,11 @@ public class Deck : MonoBehaviour
 
     public void onClickJogar()
     {
+        if(fimJogo)
+        {
+            return;
+        }
+
         bool ataqueVida = true;
         int somaAtaques = 0;
         int somaAtaquesVida = 0;
@@ -240,6 +267,12 @@ public class Deck : MonoBehaviour
 
             GameObject.Find("VidaVerde").GetComponent<Text>().text = vidaVerde.ToString();
 
+            if (vidaVerde <= 0)
+            {
+                fimJogo = true;
+                GameObject.Find("Status").GetComponent<Text>().text = "Marrom ganhou!";
+            }
+
         } 
         else
         {
@@ -278,6 +311,12 @@ public class Deck : MonoBehaviour
                 vidaMarrom -= somaAtaquesVida;
 
             GameObject.Find("VidaMarrom").GetComponent<Text>().text = vidaMarrom.ToString();
+
+            if(vidaMarrom <= 0)
+            {
+                fimJogo = true;
+                GameObject.Find("Status").GetComponent<Text>().text = "Verde ganhou!";
+            }
         }
 
         isMarrom = !isMarrom;
